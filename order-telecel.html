@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Order - Telecel | Motion Data</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    :root{--bg:#0a1810;--card:#1a2520;--input-bg:#ffffff;--muted:#b8c5bb;--accent:#84cc16;--green:#22c55e;--primary:#10b981}
+    body{margin:0;font-family:Inter,system-ui,Arial;color:#fff}
+    .wrap{max-width:960px;margin:2rem auto;padding:1rem;display:flex;flex-direction:column;align-items:center;position:relative;z-index:1}
+    .form-grid{display:flex;flex-direction:column;align-items:center;gap:1rem;min-height:calc(100vh - 200px);justify-content:center;width:100%}
+    .panel{background:linear-gradient(135deg,rgba(34,197,94,0.12),rgba(16,185,129,0.1));backdrop-filter:blur(20px);padding:1.5rem;border-radius:16px;border:1px solid rgba(132,204,22,0.2);width:100%;max-width:720px;box-shadow:0 8px 32px rgba(0,0,0,0.4)}
+    h1{font-size:1.1rem;margin:0 0 .6rem;color:var(--accent);font-weight:800}
+    label{display:block;color:#fff;font-weight:700;margin-bottom:.35rem}
+    input[type="text"], select, textarea{width:100%;padding:.7rem;border-radius:10px;border:1px solid rgba(0,0,0,0.08);background:var(--input-bg);color:#04111a}
+    .center{display:flex;justify-content:center}
+    .btn-order{background:var(--green);color:#04261a;border-radius:10px;padding:.6rem 1rem;border:none;font-weight:800;cursor:pointer;transition:all 0.3s}
+    .btn-order:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(34,197,94,0.4)}
+    .hint{font-size:.9rem;color:var(--muted);margin-top:.35rem}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <a href="index.html" class="brand">MOTION DATA SOLUTIONS</a>
+      </div>
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="https://wa.me/233256342577" class="nav-link" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </nav>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation" aria-controls="mainNav" aria-expanded="false">
+        <i class="fas fa-bars"></i><span class="hamburger-plain">&#9776;</span>
+      </button>
+    </div>
+  </header>
+  <div class="wrap">
+    <header style="margin-bottom:1rem;text-align:center"><a href="services.html" style="color:var(--accent);text-decoration:none;font-weight:700">&larr; Back</a></header>
+
+    <div class="form-grid">
+      <section class="panel" aria-labelledby="telecel-order">
+        <div>
+          <h1 id="telecel-order">SEND SINGLE ORDER — Telecel</h1>
+        </div>
+
+        <form id="telecelForm">
+          <div style="margin-top:1rem">
+            <label for="msisdn">Type Number</label>
+            <input id="msisdn" name="msisdn" type="text" placeholder="must be 10 digits!" pattern="\d{10}" inputmode="numeric" maxlength="10" required>
+            <div class="hint">Enter recipient mobile number (10 digits). Example: 0241234567</div>
+          </div>
+
+          <div style="margin-top:1rem">
+            <label for="email">Your Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            <div class="hint">We will use this email to process the payment receipt.</div>
+          </div>
+
+          <div style="margin-top:1rem">
+            <label for="packageSelectTelecel">Telecel Packages</label>
+            <select id="packageSelectTelecel" name="package_telecel">
+              <option value="">-- choose a package --</option>
+              <!-- packages populated by js/order-telecel.js -->
+            </select>
+            <div class="hint">Select a Telecel bundle to purchase. Prices shown in GHS.</div>
+          </div>
+
+          <div style="margin-top:1.25rem" class="center">
+            <button type="submit" class="btn-order">ORDER TELECEL</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/toast.js"></script>
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <script src="js/order-telecel.js"></script>
+</body>
+</html>

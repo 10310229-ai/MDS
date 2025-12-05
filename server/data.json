@@ -1,0 +1,62 @@
+{
+  "orders": [],
+  "customers": [
+    {
+      "id": "CUST-001",
+      "name": "John Mensah",
+      "phone": "0244123456",
+      "email": "john.mensah@email.com",
+      "totalOrders": 5,
+      "totalSpent": 225.00,
+      "joinDate": "2025-10-01"
+    },
+    {
+      "id": "CUST-002",
+      "name": "Ama Kofi",
+      "phone": "0201234567",
+      "email": "ama.kofi@email.com",
+      "totalOrders": 3,
+      "totalSpent": 150.00,
+      "joinDate": "2025-10-15"
+    }
+  ],
+  "packages": [
+    {
+      "id": "PKG-001",
+      "name": "MTN 10GB",
+      "network": "MTN",
+      "data": "10GB",
+      "price": 45.00,
+      "validity": "30 days",
+      "active": true
+    },
+    {
+      "id": "PKG-002",
+      "name": "Telecel 20GB",
+      "network": "Telecel",
+      "data": "20GB",
+      "price": 75.00,
+      "validity": "30 days",
+      "active": true
+    },
+    {
+      "id": "PKG-003",
+      "name": "AirtelTigo 5GB",
+      "network": "AirtelTigo",
+      "data": "5GB",
+      "price": 25.00,
+      "validity": "30 days",
+      "active": true
+    }
+  ],
+  "stats": {
+    "totalOrders": 1284,
+    "totalRevenue": 45820,
+    "totalCustomers": 2547,
+    "successRate": 98.5,
+    "ordersGrowth": 12.5,
+    "revenueGrowth": 8.2,
+    "customersGrowth": 5.1,
+    "successRateChange": -0.3
+  }
+}

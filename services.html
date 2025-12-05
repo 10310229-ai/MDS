@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Motion Data services: MTN, Telecel and AFA registration">
+    <title>Services - MOTION DATA SOLUTIONS </title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html" class="brand">MOTION DATA SOLUTIONS </a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation" aria-controls="mainNav" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <aside class="site-sidebar" id="mainNav" aria-label="Primary navigation">
+        <div class="sidebar-header-inline">
+            <a href="index.html" class="brand">MOTION DATA SOLUTIONS</a>
+            <button class="sidebar-close" aria-label="Close navigation" type="button">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="sidebar-links">
+            <a href="index.html" class="nav-link"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="services.html" class="nav-link active" aria-current="page"><i class="fas fa-shopping-cart"></i><span>Services</span></a>
+            <a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i><span>About</span></a>
+            <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i><span>Contact</span></a>
+            <a href="admin.html" class="nav-link"><i class="fas fa-user-shield"></i><span>Admin</span></a>
+            <a href="https://wa.me/233256342577" class="nav-link" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+        </nav>
+    </aside>
+
+    <main>
+        <section class="services" id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <p>Choose from our wide range of data bundles</p>
+
+                
+
+                <div class="service-grid">
+                    <div class="service-card" data-category="mtn" data-availability="available">
+                        <div class="card-badge card-badge-available">Available</div>
+                        <div class="card-icon" style="background:#FFCC00"><img src="download.jpg" alt="MTN logo" width="72" height="72"></div>
+                        <h3>MTN Data Bundle</h3>
+                        <p>Largest network coverage</p>
+                        <a class="btn btn-primary" href="order-mtn.html">Select Package</a>
+                    </div>
+
+                    <div class="service-card" data-category="telecel" data-availability="available">
+                        <div class="card-badge card-badge-available">Available</div>
+                        <div class="card-icon" style="background:#FF0000"><img src="download (2).jpg" alt="Telecel logo" width="72" height="72"></div>
+                        <h3>Telecel Data Bundle</h3>
+                        <p>Best value for money</p>
+                        <a class="btn btn-primary" href="order-telecel.html">Select Package</a>
+                    </div>
+                    <div class="service-card" data-category="airteltigo" data-availability="available">
+                        <div class="card-badge card-badge-available">Available</div>
+                        <div class="card-icon" style="background:#FF0000"><img src="download (1).jpg" alt="AirtelTigo logo" width="72" height="72"></div>
+                        <h3>AirtelTigo Data Bundle</h3>
+                        <p>Best value for money</p>
+                        <a class="btn btn-primary" href="order-airtel.html">Select Package</a>
+                    </div>
+
+                    
+                       
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+            <div class="newsletter">
+                <form id="newsletterForm">
+                    <input type="email" name="email" placeholder="Your email" style="padding:.4rem;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff">
+                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/toast.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
